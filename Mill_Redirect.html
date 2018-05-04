@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Harmony Mills: Explore to learn more!</title>
+    <meta name="Harmony Mills" content="Harmony Mills: Tap to find out more">
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene> 
+  
+      <a-sphere radius="100" position="0 0 0" src="mills_final.jpg" side="double"></a-sphere>
+      
+      <a-camera position="23.354 0 32.242">
+        <a-cursor color="#FAFAFA"></a-cursor>
+      </a-camera>
+      
+      <a-text value="Welcome to Harmony Mills! Move your smart-device around to explore different parts of the mills. Tap on parts of it that look interesting to you and you may learn more about Harmony Mills and how it used to function." position="20 4 23.75"></a-text>      <!--- Intro Text --->
+
+      
+   <a-entity id="Water_Turbine" position="52.337 2 76.259" scale="2 2 2" visible="false" transparent="true">    <!--- Turbine --->
+  <a-animation attribute="visible" begin="click" direction="forward" dur="50" to="true" repeat="indefinite" end="mouseleave"></a-animation>
+  <a-animation attribute="visible" begin="mouseleave" dur="1000" to="false" repeat="indefinite"></a-animation>
+ <a-plane src="Turbine.jpeg" height="4" width="6" side="double" position="1 1 -9" visible="true" scale="3 3 3" rotation="0 220 0"> </a-plane> 
+ <a-plane src="turbine.jpg" side="double" position="-12.57 3.25 -9.44" scale="4 4 4" rotation="0 220 0"> </a-plane> 
+</a-entity>
+    
+   <a-entity id="Mills History" position="-94.373 24.145 -2.632" scale="2 2 2" visible="false" transparent="true"> <!--- Mills --->
+  <a-animation attribute="visible" begin="click" direction="forward" dur="50" to="true" repeat="indefinite" end="mouseleave"></a-animation>
+  <a-animation attribute="visible" begin="mouseleave" dur="1000" to="false" repeat="indefinite"></a-animation>
+ <a-plane src="Harmony_Mill.jpeg" height="4" width="6" side="double" position="15 1 -1.646" scale="8 8 8" rotation="0 90 0"> </a-plane> 
+</a-entity>
+
+   <a-entity id="Power Belt" position="-60.019 45.003 67.764" scale="2 2 2" visible="false" transparent="true">  <!--- Power Belt --->
+  <a-animation attribute="visible" begin="click" direction="forward" dur="50" to="true" repeat="indefinite" end="mouseleave"></a-animation>
+  <a-animation attribute="visible" begin="mouseleave" dur="1000" to="false" repeat="indefinite"></a-animation>
+ <a-plane src="Power_Belt.jpeg" height="4" width="6" side="double" position="17.761 1 -5.636" scale="5 5 5" rotation="20 120 0"> </a-plane> 
+<a-plane src="power_belt.jpg" side="double" position="4.505 3.25 -24.262" scale="11 11 11" rotation="20 120 0"> </a-plane> 
+</a-entity>
+
+<a-entity id="Boiler_House" position="71.641 45.315 0.675" scale="2 2 2" transparent="true" visible="false">    <!--- Boiler House --->
+  <a-animation attribute="visible" begin="click" direction="forward" dur="50" to="true" repeat="indefinite" end="mouseleave"></a-animation>
+  <a-animation attribute="visible" begin="mouseleave" dur="1000" to="false" repeat="indefinite"></a-animation>
+<a-plane src="boiler_house.jpeg" height="4" width="6" side="double" position="-2.353 -5.469 0.838" scale="5 5 5" rotation="20 310 0"> </a-plane>
+<a-plane src="boiler_house.jpg" side="double" position="-21.931 -8.211 -9.44" scale="7 7 7" rotation="10 330 0"> </a-plane>
+</a-entity>
+
+<a-entity id="Mastodon" position="0.206 50.001 -73.308" scale="2 2 2" transparent="true" visible="false">       <!--- Mastodon --->
+  <a-animation attribute="visible" begin="click" direction="forward" dur="50" to="true" repeat="indefinite" end="mouseleave"></a-animation>
+  <a-animation attribute="visible" begin="mouseleave" dur="1000" to="false" repeat="indefinite"></a-animation>
+<a-plane src="Mastodon.jpeg" height="4" width="6" side="double" position="6.73 1 14.426" scale="6 6 6"> </a-plane>
+<a-plane src="mastodon.jpg" height="4" width="6" side="double" position="-20.248 1 26.566" scale="5 5 5" rotation="0 50 0"> </a-plane>
+</a-entity>
+
+    </a-scene>
+  </body>
+</html>
+
+<!--- Gaurav Dass: @dassg --->
