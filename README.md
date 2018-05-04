@@ -10,3 +10,6 @@ To get an unhindered experience:
 3.) Follow instructions on screen
 
 If your browser cannot run real_world.html, please use Firefox.
+
+
+Credit for the Harmony Mills Panorama Image goes to Artist Krista Cook @rpi
